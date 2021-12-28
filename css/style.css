@@ -1,3 +1,154 @@
+.container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        /* @include mobile {
+            max-width: 767.98px;
+            //padding: 0 5px 0 5px;
+        }
+
+        @include desktop {
+            max-width: 1000px;
+            padding: 0 15px;
+        } */
+}
+/* header styles */
+.header{
+
+}
+.header__container{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header__left{
+
+}
+.header__left--link{
+
+}
+.header__left--bgd{
+
+}
+.header__left--logo{
+
+}
+.header__list{
+
+}
+.header__item{
+
+}
+.header__item--link{
+
+}
+/* main */
+
+/* section top */
+.top{
+
+}
+.top__title{
+
+}
+.top__left{
+
+}
+.top__left--info{
+
+}
+.top__list{
+
+}
+.top__item{
+
+}
+.top__item--img{
+
+}
+.top__middle{
+
+}
+.top__middle--left{
+
+}
+.top__middle--middle{
+
+}
+.top__middle--right{
+
+}
+.top__right{
+
+}
+.top__right-title{
+
+}
+.top__right--time{
+
+}
+.top__right--old-price{
+    
+}
+.top__right--price{
+
+}
+.top__input{
+
+}
+.top__input--img{
+
+}
+/* section middle */
+.middle{
+
+}
+.middle__title{
+
+}
+.middle__list{
+
+}
+.middle__item{
+
+}
+.middle__item--img{
+
+}
+.middle_info{
+
+}
+.middle__info--title{
+
+}
+.middle__info--text{
+
+}
+/* section bottom */
+.bottom{
+
+}
+.bottom__title{
+
+}
+.bottom__info{
+
+}
+.bottom__img{
+
+}
+.bottom__info--bgd{
+
+}
+.bottom__info--text{
+
+}
+
+
+/* footer */
 .footer{
     background-image: url(../images/footer.webp);
+    background-size: cover;
+    width: auto;
 }
