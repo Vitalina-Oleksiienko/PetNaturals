@@ -12,16 +12,24 @@
       crossorigin="anonymous"
     />
     <link 
-        rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+        rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
     />
     <link 
-        rel="stylesheet" href="./css/style.css"
+        rel="stylesheet" 
+        href="./css/main.min.css"
     />
 
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
+            <div class="header-nav">
+            <div class="header__menu--mobile">
+		        <span></span>
+		        <span></span>
+		        <span></span>
+	        </div>
             <div class="header__left">
                 <a class="header__left--link" href="">
                     <img class="header__left--bgd" src="./images/cloud-left.webp" alt="" width="" height="">
@@ -29,27 +37,25 @@
                 </a>
             </div>
             <div class="header__right">
-                <ul class="header__list">
+                <ul class="header__list header-menu--js">
                     <li class="header__item"> <a class="header__item--link" href="">ORDER</a> </li>
                     <li class="header__item"> <a class="header__item--link" href="">ABOUT</a> </li>
                     <li class="header__item"> <a class="header__item--link" href="">RESULTS</a> </li>
                 </ul>
             </div>
         </div>
-    </header>
-    <main class="">
-        <section class="top">
+        <div class="top">
             <h1 class="top__title">Pet Naturals of Vermont, Calming, For Cats</h1>
             <div class="top__left">
                 <p class="top__left--info">Your cat deserves the best pet supplement the world has to offer. That's what's in the package. </p>
                 <ul class="top__list">
-                    <li class="top__item"> <img class="top__item--img" src="./images/icons8-кошачий-след-24 2.webp" alt="" width="" height=""> Features a patented calming blend </li>
-                    <li class="top__item"> <img class="top__item--img" src="./images/icons8-кошачий-след-24 2.webp" alt="" width="" height=""> Doesn’t contain herbal ingredients</li>
-                    <li class="top__item"> <img class="top__item--img" src="./images/icons8-кошачий-след-24 2.webp" alt="" width="" height=""> Helps manage everyday stress</li>
+                    <li class="top__item"> <img class="top__item--img" src="./images/icons8-кошачий-след-24 2.webp" alt="" width="18.1" height="24"> Features a patented calming blend </li>
+                    <li class="top__item"> <img class="top__item--img" src="./images/icons8-кошачий-след-24 2.webp" alt="" width="18.1" height="24"> Doesn’t contain herbal ingredients</li>
+                    <li class="top__item"> <img class="top__item--img" src="./images/icons8-кошачий-след-24 2.webp" alt="" width="18.1" height="24"> Helps manage everyday stress</li>
                 </ul>
             </div>
             <div class="top__middle">
-                <img class="top__middle--left" src="./images/cloud-left.webp" alt="" width="" height="">
+                <img class="top__middle--left" src="./images/cat-left.webp" alt="" width="" height="">
                 <img class="top__middle--middle" src="./images/calming.webp" alt="" width="" height="">
                 <img class="top__middle--right" src="./images/cat-right.webp" alt="" width="" height="">
             </div>
@@ -69,7 +75,9 @@
                     </label>
                 </form>
             </div>
-        </section>
+        </div>
+    </header>
+    <main class="">
         <section class="middle">
             <div class="">
                 <h2 class="middle__title">From the manufacturer</h2>
@@ -98,6 +106,9 @@
                 </ul>
             </div>
         </section>
+        
+    </main>
+    <footer class="footer">
         <section class="bottom">
             <h2 class="bottom__title">Best Uses for Calming Chews</h2>
             <div class="bottom__info">
@@ -113,9 +124,9 @@
             </div>
             <img class="bottom__img" src="./images/cat.webp" alt="" width="" height="">
         </section>
-    </main>
-    <footer class="footer">
         <!-- <img class="" src="./images/footer.webp" alt="" width="" height=""> -->
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
