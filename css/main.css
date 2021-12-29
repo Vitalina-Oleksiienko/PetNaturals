@@ -325,9 +325,76 @@ summary {
 }
 
 .footer {
-  background-image: url(../images/footer.webp);
-  background-size: cover;
-  width: auto;
+  background: linear-gradient(180deg, #E1EDF8 0%, rgba(127, 179, 225, 0) 59.37%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.bottom__title {
+  padding-top: 50px;
+  padding-bottom: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 61px;
+  text-align: center;
+  color: #537D13;
+}
+
+@media screen and (min-width: 1139.98px) {
+  .bottom__title {
+    padding-top: 99px;
+    padding-bottom: 58px;
+    font-size: 52px;
+    line-height: 61px;
+  }
+}
+
+.bottom__info {
+  padding: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.bottom__info--bgd {
+  position: absolute;
+  left: -157px;
+  top: 168px;
+  width: 623px;
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1139.98px) {
+  .bottom__info--bgd {
+    width: 760px;
+    height: 354px;
+    transform: none;
+  }
+}
+
+.bottom__info--text {
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #483C08;
+}
+
+@media screen and (min-width: 1139.98px) {
+  .bottom__info--text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.bottom__img {
+  margin-top: 105px;
+}
+
+.footer__img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .top__title {
@@ -578,7 +645,14 @@ summary {
 }
 
 .middle {
+  padding-bottom: 51px;
   background-image: url(../../images/Group5.webp);
+}
+
+@media screen and (min-width: 1139.98px) {
+  .middle {
+    padding-bottom: 101px;
+  }
 }
 
 .middle__title {
@@ -606,6 +680,7 @@ summary {
 }
 
 .middle__list {
+  padding: 5px 20px 5px 20px;
   display: grid;
   justify-content: center;
 }
@@ -644,6 +719,16 @@ summary {
   }
 }
 
+.second {
+  margin-top: 25px;
+  margin-bottom: 17px;
+}
+
+.third {
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
 .middle__info--title {
   padding-top: 14px;
   margin-bottom: 19px;
@@ -651,7 +736,7 @@ summary {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.1;
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -660,7 +745,7 @@ summary {
 @media screen and (min-width: 1139.98px) {
   .middle__info--title {
     font-size: 22px;
-    line-height: 26px;
+    line-height: 1.2;
   }
 }
 
@@ -668,10 +753,17 @@ summary {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 1.2;
   text-align: center;
   color: #483C08;
+}
+
+@media screen and (min-width: 1139.98px) {
+  .middle__info--text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 
 /* Меню гамбургер, закрыто */

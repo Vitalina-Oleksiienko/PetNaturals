@@ -1,6 +1,10 @@
 .middle {
+    padding-bottom: 51px;
     background-image: url(../../images/Group5.webp);
     //background-size: cover;
+    @include desktop{
+        padding-bottom: 101px;
+    }
 }
 
 .middle__title {
@@ -27,6 +31,7 @@
 }
 
 .middle__list {
+    padding: 5px 20px 5px 20px;
     display: grid;
     justify-content: center;
     @include desktop{
@@ -59,7 +64,14 @@
         padding: 66px 17px 26px 15px;
     }
 }
-
+.second{
+    margin-top: 25px;
+    margin-bottom: 17px;
+}
+.third{
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
 .middle__info--title {
     padding-top: 14px;
     margin-bottom: 19px;
@@ -67,14 +79,14 @@
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.1;
     text-align: center;
     color: #FFFFFF;
 
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     @include desktop{
         font-size: 22px;
-        line-height: 26px;
+        line-height: 1.2;
     }
 }
 
@@ -82,9 +94,14 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 1.2;
     text-align: center;
 
     color: #483C08;
+
+    @include desktop{
+        font-size: 18px;
+        line-height: 1.2;
+    }
 }
