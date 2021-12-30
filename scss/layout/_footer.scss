@@ -33,6 +33,12 @@
   padding: 40px;
   position: relative;
   text-align: center;
+
+  @include desktop{
+    width: 794px;
+    padding: 70px 91px 41px 85px;
+    text-align: left;
+  }
 }
 
 .bottom__info--bgd {
@@ -41,7 +47,11 @@
   top: 168px;
   width: 623px;
   transform: rotate(90deg);
+
   @include desktop{
+    position: absolute;
+    left: 40px;
+    top: 19px;
     width: 760px;
     height: 354px;
     transform: none;
@@ -58,12 +68,32 @@
 
   color: #483C08;
   @include desktop{
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.bottom__info--text-last{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #483C08;
+
+  @include desktop {
+    
     font-size: 18px;
     line-height: 1.2;
   }
 }
 .bottom__img {
   margin-top: 105px;
+
+  @include desktop{
+    
+  }
 }
 .footer__img{
   width: 100%;

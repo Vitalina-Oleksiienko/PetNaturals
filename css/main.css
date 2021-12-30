@@ -355,6 +355,14 @@ summary {
   text-align: center;
 }
 
+@media screen and (min-width: 1139.98px) {
+  .bottom__info {
+    width: 794px;
+    padding: 70px 91px 41px 85px;
+    text-align: left;
+  }
+}
+
 .bottom__info--bgd {
   position: absolute;
   left: -157px;
@@ -365,6 +373,9 @@ summary {
 
 @media screen and (min-width: 1139.98px) {
   .bottom__info--bgd {
+    position: absolute;
+    left: 40px;
+    top: 19px;
     width: 760px;
     height: 354px;
     transform: none;
@@ -383,6 +394,23 @@ summary {
 
 @media screen and (min-width: 1139.98px) {
   .bottom__info--text {
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.bottom__info--text-last {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #483C08;
+}
+
+@media screen and (min-width: 1139.98px) {
+  .bottom__info--text-last {
     font-size: 18px;
     line-height: 1.2;
   }
