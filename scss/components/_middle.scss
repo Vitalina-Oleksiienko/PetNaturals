@@ -45,10 +45,22 @@
     background: #F6E791;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    // width: 280px;
+    // height: 390px;
+
+    @include desktop{
+        width: 305px;
+        height: 439px;
+        margin-bottom: 30px;
+    }
     
 }
 .middle__item:not(:last-child){
     margin-bottom: 30px;
+    
+    @include desktop{
+        //margin-right: 84px;
+    }
 }
 .middle__item--img {
     margin-left: auto;
@@ -59,9 +71,19 @@
     padding: 0 17px 26px 15px;
     background: rgba(161, 211, 55, 0.4);
     border-radius: 20px;
+    width: 255px;
+    height: 200px;
 
     @include desktop{
-        padding: 66px 17px 26px 15px;
+        padding: 26px 13px 26px 15px;
+        width: 275px;
+        height: 218px;
+    }
+}
+.first{
+
+    @include desktop{
+        height: 206px;
     }
 }
 .second{
@@ -85,6 +107,7 @@
 
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     @include desktop{
+        padding-top: 0;
         font-size: 22px;
         line-height: 1.2;
     }

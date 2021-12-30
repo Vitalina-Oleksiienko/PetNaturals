@@ -1,6 +1,8 @@
 .header {
   padding-top: 23px;
   padding-bottom: 100px;
+  background: rgba(0, 0, 0, 0.3);
+  
   background-image: url(../images/bgd.webp);
   background-size: cover;
 
@@ -13,9 +15,9 @@
 
   @include desktop{
     //width: 1110px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
   }
   
 
@@ -25,7 +27,7 @@
   display: none;
 
   @include desktop{
-    
+    display: block;
     position: relative;
   }
   
@@ -48,14 +50,15 @@
 }
 
 .header__right {
-  //display: none;
+  display: none;
 
   @include desktop{
-    padding-top: 41px;
-    padding-bottom: 38.54px;
-    padding-right: 38.54px;
-    padding-left: 77px;
-    background-image: url(../images/cloud-right.webp);
+    display: block;
+    // padding-top: 41px;
+    // padding-bottom: 38.54px;
+    // padding-right: 38.54px;
+    // padding-left: 77px;
+    
   }
   
 }
@@ -64,6 +67,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  @include desktop{
+    justify-content: end;
+    background-image: url(../images/cloud-right.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 
 }
 
