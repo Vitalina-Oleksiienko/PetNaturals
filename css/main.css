@@ -328,6 +328,13 @@ summary {
   background: linear-gradient(180deg, #E1EDF8 0%, rgba(127, 179, 225, 0) 59.37%, rgba(0, 0, 0, 0.25) 100%);
 }
 
+@media screen and (min-width: 1139.98px) {
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .bottom__title {
   padding-top: 50px;
   padding-bottom: 27px;
@@ -357,8 +364,8 @@ summary {
 
 @media screen and (min-width: 1139.98px) {
   .bottom__info {
-    width: 794px;
-    padding: 70px 91px 41px 85px;
+    width: 755px;
+    padding: 70px 91px 41px 45px;
     text-align: left;
   }
 }
@@ -374,7 +381,7 @@ summary {
 @media screen and (min-width: 1139.98px) {
   .bottom__info--bgd {
     position: absolute;
-    left: 40px;
+    left: 4px;
     top: 19px;
     width: 760px;
     height: 354px;
@@ -418,6 +425,15 @@ summary {
 
 .bottom__img {
   margin-top: 105px;
+}
+
+@media screen and (min-width: 1139.98px) {
+  .bottom__img {
+    margin-left: 35px;
+    padding-top: 50px;
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 .footer__img {
