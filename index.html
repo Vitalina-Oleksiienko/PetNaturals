@@ -93,20 +93,20 @@
                     </div>
                 
                 
-                    <form class="top__form" action="" >
+                    <form class="top__form" action="" id="form1">
                         <label class="top__lable" for="">
                             <img class="top__input--first" src="./images/icons8-кошачий-след-24 6.webp" alt="">
                             <input class="top__input" type="text" placeholder="Name">
                         </label>
                         <label class="top__lable" for="">
                             <img class="top__input--second" src="./images/icons8-кошачий-след-24 6.webp" alt="">
-                            <input class="top__input" type="text" placeholder="+38(0__)___-__-__">
+                            <input class="top__input" type="text" id="zipCode" onkeyup="javascript:mask('zipCode', '+38(000)000-00-00', event);" value="+38(0__)___-__-__" placeholder="+38(0__)___-__-__">
                         </label>
                     </form>
                     <button class="top__button">ORDER</button>
                             
                                 
-                    <p class="top__date">Order date: 
+                    <p class="top__date">Order date: <span id="current_date_time_block"></span> 
                        
                     </p>
                 </div>
@@ -169,5 +169,7 @@
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/timer.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/date.js"></script>
 </body>
 </html>
