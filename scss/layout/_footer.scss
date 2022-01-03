@@ -8,7 +8,11 @@
   //width: auto;
 }
 .footer__content{
-
+  
+  @include tablet{
+    display: flex;
+    flex-direction: row;
+  }
   @include desktop{
     display: flex;
     flex-direction: row;
@@ -27,6 +31,12 @@
   text-align: center;
 
   color: #537D13;
+  @include tablet{
+    padding-top: 99px;
+    padding-bottom: 58px;
+    font-size: 52px;
+    line-height: 61px;
+  }
   @include desktop{
     padding-top: 99px;
     padding-bottom: 58px;
@@ -39,7 +49,12 @@
   padding: 40px;
   position: relative;
   text-align: center;
-
+  @include tablet{
+    width: 755px;
+    padding: 63px 32px 26px 35px;
+    
+    text-align: left;
+  }
   @include desktop{
     width: 755px;
     padding: 70px 91px 41px 45px;
@@ -53,7 +68,15 @@
   top: 168px;
   width: 623px;
   transform: rotate(90deg);
-
+  @include tablet{
+    position: absolute;
+    left: 4px;
+    top: 19px;
+    width: 564px;
+    height: 290px;
+    transform: none;
+    
+  }
   @include desktop{
     position: absolute;
     left: 4px;
@@ -73,6 +96,11 @@
   line-height: 1.6;
 
   color: #483C08;
+  @include tablet{
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
   @include desktop{
     padding-bottom: 15px;
     font-size: 18px;
@@ -87,7 +115,10 @@
   line-height: 1.6;
 
   color: #483C08;
-
+  @include tablet{
+    font-size: 14px;
+    line-height: 1.2;
+  }
   @include desktop {
     
     font-size: 18px;
@@ -96,7 +127,16 @@
 }
 .bottom__img {
   margin-top: 105px;
-
+  @include tablet{
+    width: 25%;
+    margin-left: 35px;
+    padding-top: 61px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+  }
   @include desktop{
     margin-left: 35px;
     padding-top: 50px;

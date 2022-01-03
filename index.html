@@ -39,9 +39,9 @@
                 <div class="header__right">
                     <ul class="header__list header-menu--js">
                         
-                        <li class="header__item"> <a class="header__item--link" href="">ORDER</a> </li>
-                        <li class="header__item"> <a class="header__item--link" href="">ABOUT</a> </li>
-                        <li class="header__item"> <a class="header__item--link" href="">RESULTS</a> </li>
+                        <li class="header__item"> <a class="header__item--link" href="#order">ORDER</a> </li>
+                        <li class="header__item"> <a class="header__item--link" href="#about">ABOUT</a> </li>
+                        <li class="header__item"> <a class="header__item--link" href="#results">RESULTS</a> </li>
                         
                     </ul>
                     <img class="header__left--logo" src="./images/cloud-right.webp" alt="" width="" height="">
@@ -63,11 +63,28 @@
                     <img class="top__middle--middle" src="./images/calming.webp" alt="" width="" height="">
                     <img class="top__middle--right" src="./images/cat-right.webp" alt="" width="" height="">
                 </div>
-                <div class="top__right">
+                <div class="top__right" id="order">
                 
                     <div class="top__right--bgd">
                         <h2 class="top__right-title">TIME LEFT</h2>
-                        <p class="top__right--time">2:00:00</p>
+                            <div class="timer" id="timer-1">
+                                  
+                                <div class="field">
+                                    <span class="value" data-value="hours">2</span>
+                                    <span class="label">:</span>
+                                </div>
+    
+                                <div class="field">
+                                    <span class="value" data-value="mins">00</span>
+                                    <span class="label">:</span>
+                                </div>
+    
+                                <div class="field">
+                                    <span class="value" data-value="secs">00</span>
+                                    <span class="label"></span>
+                                </div>
+                            </div>
+                        <!-- <p class="top__right--time">2:00:00</p> -->
                         <div class="top__price">
                             <p class="top__right--old-price">120uah</p>
                             <div class="top__price-line"></div>
@@ -76,7 +93,7 @@
                     </div>
                 
                 
-                    <form class="top__form" action="">
+                    <form class="top__form" action="" >
                         <label class="top__lable" for="">
                             <img class="top__input--first" src="./images/icons8-кошачий-след-24 6.webp" alt="">
                             <input class="top__input" type="text" placeholder="Name">
@@ -87,12 +104,16 @@
                         </label>
                     </form>
                     <button class="top__button">ORDER</button>
-                    <p class="top__date">Order date: 17.11.2021</p>
+                            
+                                
+                    <p class="top__date">Order date: 
+                       
+                    </p>
                 </div>
             </div>
         </div>
     </header>
-    <main class="middle">
+    <main class="middle" id="about">
         
             <div class="container">
                 <h2 class="middle__title">From the manufacturer</h2>
@@ -122,7 +143,7 @@
             </div>
         
     </main>
-    <footer class="footer">
+    <footer class="footer" id="results">
         <div class="container">
             <h2 class="bottom__title">Best Uses for Calming Chews</h2>
             <div class="footer__content">
@@ -147,5 +168,6 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/timer.js"></script>
 </body>
 </html>

@@ -34,8 +34,15 @@
     padding: 5px 20px 5px 20px;
     display: grid;
     justify-content: center;
+    @include tablet{
+        
+        grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+        grid-gap: 2vw;
+        
+    }
     @include desktop{
-        grid-template-columns: repeat(3, minmax(77px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+        //grid-template-columns: repeat(3, minmax(305px, 1fr));
     }
 }
 
@@ -47,7 +54,11 @@
     border-radius: 20px;
     // width: 280px;
     // height: 390px;
-
+    @include tablet{
+        width: 305px;
+        height: 439px;
+        margin-bottom: 30px;
+    }
     @include desktop{
         width: 305px;
         height: 439px;
@@ -73,7 +84,11 @@
     border-radius: 20px;
     width: 255px;
     height: 200px;
-
+    @include tablet{
+        padding: 26px 13px 26px 15px;
+        width: 275px;
+        height: 218px;
+    }
     @include desktop{
         padding: 26px 13px 26px 15px;
         width: 275px;
@@ -81,7 +96,9 @@
     }
 }
 .first{
-
+    @include tablet{
+        height: 206px;
+    }
     @include desktop{
         height: 206px;
     }
@@ -106,6 +123,11 @@
     color: #FFFFFF;
 
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    @include tablet{
+        padding-top: 0;
+        font-size: 22px;
+        line-height: 1.2;
+    }
     @include desktop{
         padding-top: 0;
         font-size: 22px;
@@ -122,7 +144,10 @@
     text-align: center;
 
     color: #483C08;
-
+    @include tablet{
+        font-size: 18px;
+        line-height: 1.2;
+    }
     @include desktop{
         font-size: 18px;
         line-height: 1.2;

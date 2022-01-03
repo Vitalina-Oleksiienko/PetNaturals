@@ -1,84 +1,72 @@
-/* Меню гамбургер, закрыто */
 .header__menu--mobile {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    z-index: 10;
-    overflow: hidden;
-
-    @include tablet {
-        display: none;
-    }
-
-    @include desktop {
-        display: none;
-    }
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  @include tablet {
+      display: none;
+  }
+  @include desktop {
+      display: none;
+  }
 }
-
 .header__menu--mobile span {
-    width: 30px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #222222;
-    transition: all 0.5s;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
 }
-
 .header__menu--mobile span:nth-of-type(2) {
-    top: calc(50% - 5px);
+  top: calc(50% - 5px);
 }
-
 .header__menu--mobile span:nth-of-type(3) {
-    top: calc(50% + 5px);
+  top: calc(50% + 5px);
 }
-
 /* Меняем гамбургер иконку, когда меню открыто */
 .header__menu--mobile.active span:nth-of-type(1) {
-    display: none;
+  display: none;
 }
-
 .header__menu--mobile.active span:nth-of-type(2) {
-    top: 50%;
-    transform: translate(-50%, 0%) rotate(45deg);
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
 }
-
 .header__menu--mobile.active span:nth-of-type(3) {
-    top: 50%;
-    transform: translate(-50%, 0%) rotate(-45deg);
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
 }
-
 .header__menu--mobile.active {
-    position: fixed;
+  position: fixed;
 }
 
 .header-menu--js {
-    transform: translateX(-100%);
+  transform: translateX(-138%);
 
-    @include tablet {
-        transform: none;
-    }
+  @include tablet {
+    transform: none;
+  }
 
-    @include desktop {
-        transform: none;
-    }
+  @include desktop {
+    transform: none;
+  }
 }
 
 .header-menu--js.active {
-    display: block;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    //width: 100vw;
-    //height: 100vh;
-    width: 100%;
-    height: 100%;
-    padding: 60px;
-    background: var(--accent-color);
-    text-align: center;
+  display: block;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px;
+  background: var(--accent-color);
+  text-align: center;
 
-    transition: transform 0.5s;
-    transform: translateX(0);
+  transition: transform 0.5s;
+  transform: translateX(0);
 }
