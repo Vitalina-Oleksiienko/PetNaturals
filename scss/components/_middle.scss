@@ -1,30 +1,29 @@
 .middle {
     padding-bottom: 51px;
     background-image: url(../../images/Group5.webp);
-    //background-size: cover;
+
     @include desktop{
         padding-bottom: 101px;
     }
 }
 
 .middle__title {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 0 30px 0;
+
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 42px;
     line-height: 61px;
     text-align: center;
-    color: violet;
+    
     background: linear-gradient(to bottom, rgba(249, 233, 148, 1),
      rgba(83, 125, 19, 1),
      rgba(72, 60, 8, 1));
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
     @include desktop{
-        margin-top: 100px;
-        margin-bottom: 60px;
+        margin: 100px 0 60px 0;
         font-size: 52px;
         line-height: 61px;
     }
@@ -35,25 +34,20 @@
     display: grid;
     justify-content: center;
     @include tablet{
-        
         grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
-        grid-gap: 2vw;
-        
+        grid-gap: 2vw; 
     }
     @include desktop{
         grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
-        //grid-template-columns: repeat(3, minmax(305px, 1fr));
     }
 }
 
 .middle__item {
-
     padding: 0 15px 14px 15px;
     background: #F6E791;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    // width: 280px;
-    // height: 390px;
+    
     @include tablet{
         width: 305px;
         height: 439px;
@@ -70,7 +64,7 @@
     margin-bottom: 30px;
     
     @include desktop{
-        //margin-right: 84px;
+        
     }
 }
 .middle__item--img {
@@ -143,7 +137,7 @@
     line-height: 1.2;
     text-align: center;
 
-    color: #483C08;
+    color: var(--text-color);
     @include tablet{
         font-size: 18px;
         line-height: 1.2;

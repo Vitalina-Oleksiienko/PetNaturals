@@ -27,7 +27,7 @@
 .header__menu--mobile span:nth-of-type(3) {
   top: calc(50% + 5px);
 }
-/* Меняем гамбургер иконку, когда меню открыто */
+
 .header__menu--mobile.active span:nth-of-type(1) {
   display: none;
 }
@@ -44,13 +44,16 @@
 }
 
 .header-menu--js {
+  display: none;
   transform: translateX(-138%);
 
   @include tablet {
+    display: flex;
     transform: none;
   }
 
   @include desktop {
+    display: flex;
     transform: none;
   }
 }

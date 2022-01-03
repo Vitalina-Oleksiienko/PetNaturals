@@ -1,8 +1,4 @@
-// @mixin desktop {
-//   @media screen and (min-width: 576px) and (max-width: 1920px) {
-//     @content;
-//   }
-// }
+
 @mixin desktop {
   @media screen and (min-width: 1140px) {
     @content;
@@ -24,11 +20,4 @@
   }
 }
 
-@mixin retina2 {
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    @content;
-  }
-}
+

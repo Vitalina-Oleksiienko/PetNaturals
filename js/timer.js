@@ -27,8 +27,7 @@ class CountdownTimer {
         const hours = this.pad(Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
         const mins = this.pad(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)));
         const secs = this.pad(Math.floor((timeLeft % (1000 * 60)) / 1000));
-
-        
+ 
         this.refs.hours.textContent = hours;
         this.refs.mins.textContent = mins;
         this.refs.secs.textContent = secs;
@@ -41,5 +40,5 @@ class CountdownTimer {
 
 const firstTimer = new CountdownTimer({
     selector: '#timer-1',
-    targetDate: new Date('Jan 04, 2022'),
+    targetDate: new Date('Jan 04, 2022 15:27:00'),
 });
